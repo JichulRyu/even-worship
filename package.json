@@ -1,18 +1,18 @@
 {
   "name": "even-worship",
-  "version": "0.4.1",
+  "version": "0.6.1",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "pack": "npm run build && evenhub pack app.json dist -o even-worship.ehpk --sdk-ver 0.0.14",
+    "pack": "npm run build && evenhub pack app.json dist -o even-worship-v0.6.1.ehpk --sdk-ver 0.0.14",
     "server": "node server/server.mjs"
   },
   "dependencies": {
     "@evenrealities/even_hub_sdk": "0.0.14"
   },
   "devDependencies": {
-    "@evenrealities/evenhub-cli": "latest",
+    "@evenrealities/evenhub-cli": "0.1.14",
     "vite": "^7.0.0"
   }
 }
