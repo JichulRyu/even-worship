@@ -1,6 +1,9 @@
 name: Build Even Hub package
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [app.json]
 permissions:
   contents: read
 jobs:
@@ -13,8 +16,9 @@ jobs:
           node-version: '22'
       - run: npm install --no-audit --no-fund
       - run: npm run pack
+      - run: test -s even-worship-v0.6.1.ehpk
       - uses: actions/upload-artifact@v4
         with:
-          name: even-worship-ehpk
-          path: even-worship.ehpk
+          name: even-worship-v0.6.1-ehpk
+          path: even-worship-v0.6.1.ehpk
           if-no-files-found: error
