@@ -1,11 +1,11 @@
 {
   "name": "even-worship",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "pack": "npm run build && evenhub pack app.json dist -o even-worship-v0.6.2.ehpk --sdk-ver 0.0.14",
+    "pack": "npm run build && evenhub pack app.json dist -o even-worship-v0.6.3.ehpk --sdk-ver 0.0.14",
     "server": "node server/server.mjs"
   },
   "dependencies": {
