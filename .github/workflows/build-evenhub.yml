@@ -1,0 +1,20 @@
+name: Build Even Hub package
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - run: npm run pack
+      - uses: actions/upload-artifact@v4
+        with:
+          name: even-worship-ehpk
+          path: even-worship.ehpk
+          if-no-files-found: error
