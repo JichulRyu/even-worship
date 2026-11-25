@@ -8,6 +8,37 @@
       "access": "free",
       "reuseAllowed": true,
       "license": "테스트 및 재사용 허용"
+    },
+    {
+      "title": "Amazing Grace (English)",
+      "aliases": [
+        "Amazing Grace",
+        "나 같은 죄인 살리신",
+        "나같은죄인살리신",
+        "찬송가 305장",
+        "305장"
+      ],
+      "key": "G",
+      "body": "{comment: Verse 1}\n[G]Amazing grace! How [C]sweet the [G]sound\nThat saved a wretch like [D]me!\nI [G]once was lost, but [C]now am [G]found,\nWas blind, but [D]now I [G]see.\n{comment: Verse 2}\n[G]'Twas grace that taught my [C]heart to [G]fear,\nAnd grace my fears re[D]lieved;\nHow [G]precious did that [C]grace ap[G]pear\nThe hour I [D]first be[G]lieved!\n{comment: Verse 3}\n[G]Through many dangers, [C]toils and [G]snares,\nI have already [D]come;\n'Tis [G]grace hath brought me [C]safe thus [G]far,\nAnd grace will [D]lead me [G]home.\n{comment: Verse 4}\n[G]The Lord has promised [C]good to [G]me,\nHis word my hope se[D]cures;\nHe [G]will my shield and [C]portion [G]be,\nAs long as [D]life en[G]dures.",
+      "source": "John Newton (1779), NEW BRITAIN · https://hymnary.org/hymn/LUYH2013/691",
+      "access": "free",
+      "reuseAllowed": true,
+      "license": "영어 원문 및 전통 선율 퍼블릭 도메인; 코드 앱용 간이 편곡 (연주 검증 전). 한국어 제목은 검색 별칭이며 한국어 번역 가사는 포함하지 않음."
+    },
+    {
+      "title": "What a Friend We Have in Jesus (English)",
+      "aliases": [
+        "What a Friend We Have in Jesus",
+        "죄짐 맡은 우리 구주",
+        "찬송가 369장",
+        "369장"
+      ],
+      "key": "G",
+      "body": "{comment: Verse 1}\n[G]What a friend we have in [C]Jesus,\n[G]All our sins and griefs to [D]bear!\n[G]What a privilege to [C]carry\n[G]Everything to [D]God in [G]prayer!\n[D]O what peace we often [G]forfeit,\n[C]O what needless pain we [D]bear,\n[G]All because we do not [C]carry\n[G]Everything to [D]God in [G]prayer!\n{comment: Verse 2}\n[G]Have we trials and temp[C]tations?\n[G]Is there trouble any[D]where?\n[G]We should never be dis[C]couraged;\n[G]Take it to the [D]Lord in [G]prayer.\n[D]Can we find a friend so [G]faithful,\n[C]Who will all our sorrows [D]share?\n[G]Jesus knows our every [C]weakness;\n[G]Take it to the [D]Lord in [G]prayer.\n{comment: Verse 3}\n[G]Are we weak and heavy [C]laden,\n[G]Cumbered with a load of [D]care?\n[G]Precious Savior, still our [C]refuge,\n[G]Take it to the [D]Lord in [G]prayer.\n[D]Do thy friends despise, for[G]sake thee?\n[C]Take it to the Lord in [D]prayer!\n[G]In his arms he'll take and [C]shield thee;\n[G]Thou wilt find a [D]solace [G]there.",
+      "source": "Joseph M. Scriven, Charles C. Converse · https://hymnary.org/hymn/LUYH2013/897",
+      "access": "free",
+      "reuseAllowed": true,
+      "license": "영어 원문 및 전통 선율 퍼블릭 도메인; 코드 앱용 간이 편곡 (연주 검증 전). 한국어 제목은 검색 별칭이며 한국어 번역 가사는 포함하지 않음."
     }
   ]
 }
