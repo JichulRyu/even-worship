@@ -7,7 +7,7 @@ await mkdir(resolve(root,'public'),{recursive:true});
 let html=await readFile('index.html','utf8');
 const scripts=html.match(/<script>([\s\S]*?)<\/script>/);
 if(!scripts)throw Error('Missing inline script');
-const js=scripts[1].replace("import('https://cdn.jsdelivr.net/npm/@evenrealities/even_hub_sdk@0.0.14/+esm')","import('@evenrealities/even_hub_sdk')");
+const js=scripts[1].replaceAll("import('https://cdn.jsdelivr.net/npm/@evenrealities/even_hub_sdk@0.0.14/+esm')","import('@evenrealities/even_hub_sdk')").replace('const PACKAGED_APP=false','const PACKAGED_APP=true');
 if(js.includes('cdn.jsdelivr.net'))throw Error('SDK must be bundled');
 await writeFile(resolve(root,'main.js'),js);
 await writeFile(resolve(root,'index.html'),html.replace(scripts[0],'<script type="module" src="./main.js"></script>'));
