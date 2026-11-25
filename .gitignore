@@ -1,0 +1,7 @@
+node_modules/
+.even-build/
+dist/
+*.ehpk
+.env
+.env.*
+!.env.example
