@@ -1,0 +1,16 @@
+import {readFile,writeFile,mkdir,rm,copyFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {build} from 'vite';
+const root=resolve('.even-build');
+await rm(root,{recursive:true,force:true});
+await mkdir(resolve(root,'public'),{recursive:true});
+let html=await readFile('index.html','utf8');
+const scripts=html.match(/<script>([\s\S]*?)<\/script>/);
+if(!scripts)throw Error('Missing inline script');
+const js=scripts[1].replace("import('https://cdn.jsdelivr.net/npm/@evenrealities/even_hub_sdk@0.0.14/+esm')","import('@evenrealities/even_hub_sdk')");
+if(js.includes('cdn.jsdelivr.net'))throw Error('SDK must be bundled');
+await writeFile(resolve(root,'main.js'),js);
+await writeFile(resolve(root,'index.html'),html.replace(scripts[0],'<script type="module" src="./main.js"></script>'));
+await copyFile('scores.json',resolve(root,'public/scores.json'));
+await build({configFile:false,root,base:'./',build:{outDir:resolve('dist'),emptyOutDir:true,target:'es2022'}});
+console.log('Built dist. Use npm run pack for the Even Hub package.');
