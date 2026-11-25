@@ -18,6 +18,7 @@ jobs:
           node-version: '22'
       - run: npm install --no-audit --no-fund
       - run: npm run pack
+      - run: grep -q '0.7.0' app.json
       - run: test -s even-worship-v0.7.0.ehpk
       - uses: actions/upload-artifact@v4
         with:
