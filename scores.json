@@ -1,0 +1,13 @@
+{
+  "songs": [
+    {
+      "title": "작은 빛 (창작 테스트)",
+      "key": "G",
+      "body": "{comment: Verse}\n[G]작은 빛 [D]하나 들고\n[Em7]오늘의 길 [C]걸어가\n{comment: Chorus}\n[G]서로의 손 [D]잡으며\n[C]새로운 날 [G]맞이해",
+      "source": "Even Worship 앱용 신규 창작 테스트 자료",
+      "access": "free",
+      "reuseAllowed": true,
+      "license": "테스트 및 재사용 허용"
+    }
+  ]
+}
