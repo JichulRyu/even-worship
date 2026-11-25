@@ -1,0 +1,31 @@
+{
+  "package_id": "com.jichulryu.evenworship",
+  "edition": "202601",
+  "name": "Even Worship",
+  "version": "0.4.1",
+  "min_sdk_version": "0.0.14",
+  "entrypoint": "index.html",
+  "permissions": [
+    {
+      "name": "network",
+      "desc": "Search for score sources and transcribe user-requested voice commands.",
+      "whitelist": [
+        "https://api.tavily.com",
+        "https://api.groq.com",
+        "https://generativelanguage.googleapis.com",
+        "https://jichulryu.github.io"
+      ]
+    },
+    {
+      "name": "g2-microphone",
+      "desc": "Record a short voice command after the user activates search."
+    },
+    {
+      "name": "album",
+      "desc": "Select a permitted score image."
+    }
+  ],
+  "supported_languages": [
+    "ko"
+  ]
+}
