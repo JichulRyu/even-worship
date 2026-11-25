@@ -18,9 +18,9 @@ jobs:
           node-version: '22'
       - run: npm install --no-audit --no-fund
       - run: npm run pack
-      - run: test -s even-worship-v0.6.2.ehpk
+      - run: test -s even-worship-v0.6.3.ehpk
       - uses: actions/upload-artifact@v4
         with:
-          name: even-worship-v0.6.2-ehpk
-          path: even-worship-v0.6.2.ehpk
+          name: even-worship-v0.6.3-ehpk
+          path: even-worship-v0.6.3.ehpk
           if-no-files-found: error
